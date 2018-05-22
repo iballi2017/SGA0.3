@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+.small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.Stegen{
+  background-image: url("https://i.imgur.com/tMWbxRl.jpg");
+}
+.Semedo{
+  background-image: url("https://i.imgur.com/RMxgW0x.jpg");
+}
+.Piqué{
+  background-image: url("https://i.imgur.com/Siw0Sqt.jpg");
+}
+.number {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Barcelona First Team</h1>
+<h2>"Més que un club" ("More than a club")</h2>
+<div class="Stegen">
+  <p>Marc-André ter Stegen <span class="number">No1</span><br />
+  <small>Marc-André ter Stegen signed for FC Barcelona in the summer
+ of 2014 from Borussia Mönchengladbach. Born on 30 April 1992 
+ in Mönchengladbach itself, the German did not take long to 
+ make his name as one Europe’s most promising young goalkeepers. <a href="#">continue...</a></small></p>
+</div>
+
+<div class="Semedo">
+  <p>Nélson Cabral Semedo<span class="number">No2</span><br />
+  <small>Nélson Cabral Semedo, born 16 November 1993, joined Benfica in 2012 
+from Sintrense. He went back on loan to his former club for a year 
+before becoming a full time member of the Eagles’ reserves. He performed 
+brilliantly for the second team, and made his first team debut in the 
+2015 Portuguese Super Cup against Sporting Lisbon. <a href="#">continue...</a></small></p>
+</div>
+  
+<div class="Piqué">
+  <p>Gerard Piqué <span class="number">No3</span><br />
+  <small>Gerard Piqué returned to FC Barcelona, the club where he started out as 
+a youngster, in the summer of 2008, after three seasons with Manchester 
+United and one on loan with Real Zaragoza <a href="#">continue...</a></small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+</body>
+</html>
