@@ -4,11 +4,16 @@
   <style>
     body {
       text-align: center;
-      background: url("http://dash.ga.co/assets/anna-bg.png");
+      background: url("https://i.imgur.com/GdTQRIT.jpg");
       background-size: cover;
       background-position: center;
       color: white;
       font-family: helvetica;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 105px;
     }
     p {
       font-size: 22px;
