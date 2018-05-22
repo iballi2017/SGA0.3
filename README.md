@@ -1,35 +1,83 @@
 # SGA 0.3
 
 <!DOCTYPE html>
+
 <head>
-  <title>Ibrahim Alli</title>
-  <style>
-    body {
-      text-align: center;
-      background: url("http://dash.ga.co/assets/anna-bg.png");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      font-family: helvetica;
-    }
-    p {
-      font-size: 22px;
-    }
-    input {
-      border: 0;
-      padding: 10px;
-      font-size: 18px;
-    }
-    input[type="submit"] {
-      background: red;
-     color: white;
-    }
-  </style>
+<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<script src="/assets/jquery.js"></script>
+<style>
+body {
+  text-align: center;
+  font-family: 'Fjalla One';
+  font-size: 20px;
+  background: #e6eaf0;
+}
+button {
+  margin: 40px;
+}
+input {
+  font-size: 24px;
+}
+.fill {
+  background: white;
+  color: red;
+  border-bottom: 2px black solid;
+  font-family: 'Shadows Into Light';
+  padding: 0 6px;
+  margin: 4px;
+}
+</style>
 </head>
+
 <body>
-  <img src="http://imgur.com/93sYBwZ.jpg" width="200">
-  <p>Hi! I'm Ibrahim, a Lagos-based CCNA tutor. Say hello!</p>
-  <input type="email" placeholder="Your email">
-  <input type="submit">
+<div class="prompt"></div>
+<button>Next</button>
+<script>
+// List of prompts for the user
+var prompts = [
+  'Type your name',
+  'Type an adjective',
+  'Type a noun'
+   ];
+
+var answers=[];
+// Keep track of current prompt we're on
+var currentPrompt = 0;
+
+// A function that will call the next prompt
+var nextPrompt = function() {
+  //if there's no answer in the form
+  if (currentPrompt != 0){
+    answers.push($('input').val());
+  }
+  // if there is a next prompt
+  if (currentPrompt < prompts.length) {
+    // put first prompt in all html elements with class 
+    $('.prompt').html(prompts[currentPrompt] +'<br><input type="text">');
+    // move the next prompt into variable currentPrompt 
+    currentPrompt = currentPrompt + 1;
+  }
+  //or else if we're at the end of the array
+  else {
+    // put a new message into the html.
+    showFinal();
+  }
+}
+
+//puts user answers into HTML
+var showFinal = function() {
+  $('.prompt').html('This is the story of <span class="fill">'+answers[0]+'</span> and the <span class="fill">'+answers[1]+'</span><span class="fill">'+answers[2]+'</span>.');
+  //and then the hide button
+  $('button').hide();
+}
+// run nextPrompt function when button is clicked
+$('button').click(function() {
+  nextPrompt();
+});
+
+// Show the first prompt as soon as js loads
+nextPrompt();
+</script>
 </body>
-</html>
+
