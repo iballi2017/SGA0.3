@@ -4,9 +4,12 @@
   <style>
     header {
       text-align: center;
-      background: url('http://dash.ga.co/assets/jeff-bg.png');
+      background: url('http://i.imgur.com/GdTQRIT.jpg');
       background-size: cover;
       color: white;
+    }
+    header img{
+    
     }
     a {
       color: white;
@@ -17,7 +20,8 @@
     img {
       margin: 40px 0px 0px 0px;
       border: 7px solid white;
-      border-radius: 20px;
+      border-radius: 30px;
+      width:150px;
     }
     ul {
       padding: 10px;
@@ -31,6 +35,9 @@
       max-width: 500px;
       padding: 20px;
       margin: 0 auto;
+    }
+    .more{
+    	color:blue;
     }
     @media (max-width: 500px) {
       h1 {
@@ -46,27 +53,50 @@
 </head>
 <body>
   <header>
-    <img src="/assets/jeff.png">
-    <h1>Jeff's Blog</h1>
+    <img src="http://i.imgur.com/93sYBwZ.jpg">
+    <h1>Alli's Blog</h1>
+    <h2>Brighten your day with the best jokes</h2>
     <ul>
       <li><a href="#">About Me</a></li>
-      <li><a href="#">Best Poems</a></li>
-      <li><a href="#">Worst Poems</a></li>
+      <li><a href="#">Nigerian jokes</a></li>
+      <li><a href="#">African jokes</a></li>
     </ul>
   </header>
   <article>
-    <h2>VHS umami pop-up trust fund</h2>
-    <p>Marfa church-key kitsch bicycle rights, 8-bit mixtape cardigan gentrify Echo Park. Street art swag brunch, next level roof party Schlitz hella organic keffiyeh selfies. You probably haven't heard of them polaroid hashtag +1, meggings biodiesel Portland High Life cray tumblr retro.</p>
+    <h2>LONDON ZOO</h2>
+    <p>A Nigerian youngster who was visiting the United Kingdom for the first time was taken to the London zoo for sightseeing. On getting to the section where monkeys are kept, he was amazed to see other tourists giving out plenty of money to the monkeys that were hopping around doing acrobatics. The more the acrobatics, the more the tourists enjoyed the show and the more the money (hard currency) the monkeys got.
+    
+    This young man suddenly had an idea and when he got back to Nigeria, he started learning all kinds of acrobatics. He visited his medicine man and asked for a portion that will transform him into a monkey.
+    
+    During his next visit to London, he went into the zoo and took the portion and was transformed into a monkey. He joined the other monkeys and started his own type of modern, systematic and attractive acrobatics. He soon caught the attention of all the tourists who wasted no time in showering him with plenty of pounds sterling. He was now making more money than the real monkeys.
+    
+    The king of the monkeys didn't like this and challenged the new monkey to an acrobatic duel. The contest was tough and very keen but the new monkey won. The king monkey had to go on exile in shame but before he left he set a trap for the intruding monkey who now became the new king.
+    
+    The next day, monkey business started
+    <a href="#" class="more">more...</a></p>
     <button>Like</button>
   </article>
   <article>
-    <h2>Sartorial synth Echo Park, roof party</h2>
-    <p>chambray you probably haven't heard of them pour-over viral selvage umami skateboard VHS post-ironic selfies. Wes Anderson gentrify fanny pack twee, bicycle rights bitters blog keffiyeh plaid flannel. Tonx irony cliche sustainable mlkshk bitters. Four loko leggings chambray Vice.</p>
+    <h2>Hungry and Broke</h2>
+    <p>There were three men living together in London. An Afro-American, a West Indian and a Nigerian. They were all starving because they didn't have money to buy food.
+    
+    However upon coming close to a posh London restaurant in this classy neighbourhood, they decided to come up with a plan.
+    
+    The Afro-American went in first. After being seated, he ordered a three course meal with white wine. When he had finished the meal, the waiter came by with the bill. "LISTEN MY MAN, I ALREADY PAID YOU!" - the Afro-American shouted! The waiter was very confused because he could not remember being paid. But because he did not want to cause any trouble, he let the brother leave.
+    
+    Five minutes later, <a href="#" class="more">more...</a></p>
     <button>Like</button>
   </article>
   <article>
-    <h2>Forage food truck keytar master cleanse</h2>
-    <p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
+    <h2>NNA, IYON AND KANABAR</h2>
+    <p>An Akwa Ibom passenger once boarded a bus in Lagos. The bus driver was an Ijaw man and the conductor was a Calabar man.
+    
+    The Akwa Ibom man said to the bus conductor, "Ah de ko ori oro."
+    
+    The conductor then told the driver, "Idi-oro wa O."
+    
+    On the way, the bus had a flat tire. The Ijaw man then told his conductor, "Zackson, get the zack, make you put the spare tire. Make you no allow us sleep for road in Nagos O."
+    <a href="#" class="more">more...</a></p>
     <button>Like</button>
   </article>
   <script>
