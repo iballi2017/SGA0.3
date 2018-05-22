@@ -46,7 +46,7 @@ p {
   -moz-transition: height .5s;
 }
 
-small {
+.small {
   opacity: 0;
 }
 
