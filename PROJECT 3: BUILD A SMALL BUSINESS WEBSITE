@@ -46,7 +46,6 @@ p {
   -webkit-transition: height .5s;
   -moz-transition: height .5s;
 }
-
 .small {
   opacity: 0;
 }
@@ -70,6 +69,8 @@ p {
 }
 .price {
   float: right;
+  background:white;
+  color:rgba(255,0,0,1);
 }
 @media (max-width: 500px) {
   h1 {
@@ -101,7 +102,7 @@ p {
 <h1>Alli Mobile Center</h1>
 <h2>Home of mobile technologies</h2>
 <div class="first">
-  <p>Samsung Galaxy S9+<span class="price"><del>₦320,000.00</del> ₦298,000.00</span><br />
+  <p>Samsung Galaxy S9+<span class="price"><del>₦320,000.00</del><b>  ₦298,000.00</b></span><br />
   <small>SKU: s9 plus
   <br>QUICK OVERVIEW
   <br>Operating System – Android 8.0 (Oreo)
@@ -116,7 +117,7 @@ p {
 </div>
 
 <div class="second">
-  <p>Infinix Hot S<span class="price"><del>₦48,000.00</del> ₦45,000.00</span><br />
+  <p>Infinix Hot S<span class="price"><del>₦48,000.00</del><b>  ₦45,000.00</b></span><br />
   <small>SKU: hot s
   <br>QUICK OVERVIEW
   <br>Key features:
@@ -132,7 +133,7 @@ p {
 </div>
   
 <div class="dessert">
-  <p>Tecno Camon CX<span class="price"> <del>₦56,500.00</del> ₦54,400.00</span><br />
+  <p>Tecno Camon CX<span class="price"> <del>₦56,500.00</del><b>  ₦54,400.00</b></span><br />
   <small>SKU: Camon CX
   <br>QUICK OVERVIEW
   <br>Key features:
